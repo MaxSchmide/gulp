@@ -1,7 +1,7 @@
 {
-  "name": "easy-webdev-startpack",
+  "name": "gulp",
   "version": "3.1.1",
-  "description": "HTML5+CSS3 template for easy start website project'",
+  "description": "gulp ",
   "main": "gulpfile.js",
   "scripts": {
     "html": "gulp",
@@ -10,7 +10,7 @@
     "ftp": "gulp deploy",
     "build-ftp": "npm run build && npm run ftp"
   },
-  "author": "",
+  "author": "Max Schmide",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.14.2",
