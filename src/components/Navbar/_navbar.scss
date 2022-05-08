@@ -2,14 +2,6 @@
   &__container {
     display: flex;
     justify-content: space-between;
-    .logo {
-      margin: auto 10px;
-      &__link {
-        text-decoration: none;
-        color: #0e2431;
-        font-size: 1.2rem;
-      }
-    }
     .checkbox {
       position: absolute;
       display: none;
