@@ -14,33 +14,35 @@
     gap: 20px;
     transition: 0.4s;
     &:hover {
-      background-color: rgb(184, 181, 181);
+      background-color: $activeColor;
     }
     &.active {
-      background-color: rgb(184, 181, 181);
+      background-color: $activeColor;
+    }
+    // .accordion__item-content
+    &__item-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+      &.active {
+        max-height: $contentHeight;
+      }
     }
   }
-  // .accordion__item-content
-  &__item-content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-out;
-    &.active {
-      max-height: 89px;
+  .trigger {
+    // .trigger__icon
+    &__icon {
+    }
+    // .trigger__text
+    &__text {
+    }
+  }
+  .content {
+    // .content__text
+    &__text {
+      padding: 10px;
     }
   }
 }
-.trigger {
-  // .trigger__icon
-  &__icon {
-  }
-  // .trigger__text
-  &__text {
-  }
-}
-.content {
-  // .content__text
-  &__text {
-    padding: 10px;
-  }
-}
+$activeColor: rgb(184, 181, 181);
+$contentHeight: 89px;
